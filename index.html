@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tailtreks</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Javascript links-->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3n54OXCbbKXpoaZ7S5xSImEkqNE_KV_A"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+</head>
+
+<body onload="getLocation()">
+
+  <div class="mapBlock"> <div id="map"></div> </div> 
+
+  <br><br>
+
+  <form id="userForm" class="nameForm">
+    <input type="text" name="name" placeholder="Change Name" id="name">
+    <button type="submit">Submit</button>
+  </form>
+
+  <br><br>
+
+  <div class="markerBox">
+    <pre id="printName" class="text">Marker Name</pre>
+    <pre id="printAddy" class="text">Address</pre>
+    <pre id="printLocLat" class="text">Latitude</pre>
+    <pre id="printLocLng" class="text">Longitude</pre>
+  </div>
+  
+
+</body>
+
+</html>

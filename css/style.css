@@ -1,0 +1,32 @@
+html, body {
+	height: 100%;
+   	margin:0;
+   	padding:0;
+}
+
+.mapBlock {
+	width: 98%;
+	height: 600px;
+	margin: 10px;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+.nameForm {
+	margin-left: 10px;
+}
+
+.markerBox {
+	background: lightgrey;
+	width: 450px;
+	height: 150px;
+	margin-left: 10px;
+}
+
+.text {
+	padding-left: 10px;
+	padding-top: 10px;
+}
