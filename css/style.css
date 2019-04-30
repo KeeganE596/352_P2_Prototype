@@ -17,6 +17,7 @@ html, body {
 
 .nameForm {
 	margin-left: 10px;
+	margin-bottom: 5px;
 }
 
 .markerBox {
@@ -24,9 +25,19 @@ html, body {
 	width: 450px;
 	height: 150px;
 	margin-left: 10px;
+	margin-top: -25px;
 }
 
 .text {
 	padding-left: 10px;
 	padding-top: 10px;
+}
+
+.lng {
+	float: left;
+	padding-top: 0px;
+}
+
+.bt {
+	border: solid 1px red;
 }
