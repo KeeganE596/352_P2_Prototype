@@ -8,6 +8,7 @@ html, body {
 	width: 98%;
 	height: 600px;
 	margin: 10px;
+	margin-bottom: -10px;
 }
 
 #map {
@@ -23,9 +24,9 @@ html, body {
 .markerBox {
 	background: lightgrey;
 	width: 450px;
-	height: 150px;
 	margin-left: 10px;
 	margin-top: -25px;
+	padding-bottom: 5px;
 }
 
 .text {
