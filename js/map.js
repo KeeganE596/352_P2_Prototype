@@ -77,16 +77,29 @@ function createMarkers(data) {
     });
 
     var databaseRef = firebase.database().ref('markers');
-    databaseRef.child(data.results[i].place_id).once('value', snapshot => {
-      if (!snapshot.exists()){
+    var doesnotExist = false;
+
+      databaseRef.child(data.results[i].place_id).once('value', snapshot => {
+        if(snapshot.exists()){
+          console.log("exists");
+          
+        } 
+        else{
+          console.log("doesnt exist");
+          doesnotExist = true;
+          console.log(doesnotExist);
+        }
+      });
+
+      if(doesnotExist = true) {
+        console.log("adding");
         var newdatabaseRef = databaseRef.child(data.results[i].place_id);
-        newdatabaseRef.set({
-          name: data.results[i].name,
-          location: data.results[i].geometry.location,
-          vicinity: data.results[i].vicinity
-        });
+          newdatabaseRef.set({
+            name: data.results[i].name,
+            location: data.results[i].geometry.location,
+            vicinity: data.results[i].vicinity
+          });
       }
-    });
 
     addMarkerListener(marker);
   }
