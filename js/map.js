@@ -117,7 +117,7 @@ var addMarkerListener = function(marker) {
 
 function initializeFirebase() {
   var config = {
-      apiKey: "AIzaSyCnMxEXJpkbgxtF62sfopZ4-1SA6WNCcDo",
+      apiKey: "[API_KEY]",
       authDomain: "mddn-352-project-2.firebaseapp.com",
       databaseURL: "https://mddn-352-project-2.firebaseio.com",
       projectId: "mddn-352-project-2",
